@@ -41,7 +41,6 @@ nav{
     align-items: center;
     list-style: none;
     background-color: #ffffff6b;
-    /* transition: all .3s linear; */
     height: 40px;
     padding: 0px 20px;
     border-radius: 7px;
@@ -54,7 +53,6 @@ nav{
     
 }
 .manu-items li:hover{
-    /* transform: scale(1.105); */
     background-color: rgb(35, 19, 19);
     border: 1px solid transparent;
 
@@ -62,6 +60,80 @@ nav{
 .manu-items a:hover{
     text-decoration: none;
     color: white;    
+}
+/* ##### Home ##### */
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.text {
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+.heading {
+    font-size: 2em;
+    font-size: calc(1px + 4vw);
+    margin: 0px;
+    font-weight: 600;
+}
+
+.heading+p {
+    margin: 5px 0px;
+    font-size: calc(7px + 1vw);
+}
+
+span {
+    font-weight: bold;
+}
+
+.manu-btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    background-color: transparent;
+    font-size: 15px;
+    padding: 10px 0px;
+    width: 80px;
+    border-radius: 5px;
+    color: #4b2614;
+    border: 1px solid #4b2614;
+    margin-top: 20px;
+    margin-right: 200px;
+}
+
+button:hover {
+    background-color: rgb(75, 38, 20);
+    color: #fff;
+    z-index: 10;
+}
+
+.home-img {
+    margin-top: -16%;
+    margin-left: -40px;
+
+}
+
+.home-img img {
+    width: 70%;
+}
+
+.right-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 @media (max-width: 768px) {
     nav{
