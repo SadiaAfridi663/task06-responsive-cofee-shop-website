@@ -63,11 +63,42 @@ nav{
     text-decoration: none;
     color: white;    
 }
+@media (max-width: 768px) {
+    nav{
+        padding: 0px 30px 0px 15px;
+    }
+    .manu-items{
+        gap:7px
 
-#home{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid;
-    height: 480px;
+    }
+    .manu-items li{
+        height: 35px;
+        padding: 0px 15px;
+    }
+    .manu-items li a{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 576px){
+    nav{
+        padding: 0px 20px 0px 15px;
+    }
+    .manu-items{
+        gap:4px
+
+    }
+    .logo img{
+        height: 60px;
+        width: 60px;
+    }
+    .manu-items li{
+        height: 30px;
+        /* border-radius: 5px; */
+        padding: 0px 8px;
+
+    }
+    .manu-items li a{
+        font-size: 13px;
+    }
 }
