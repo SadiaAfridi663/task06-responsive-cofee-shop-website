@@ -265,6 +265,32 @@ button:hover {
     padding: 12px 0px;
 }
 
+
+
+footer{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.495),rgba(0, 0, 0, 0.495)), url(./assets/Coffee_Beans_Footer1.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    padding-top: 50px;
+    color: #ffffff;
+  }
+  footer ul{
+    margin-bottom: 30px;
+  }
+
+  footer ul li{
+    list-style-type: none;
+    color: #ffffff;
+  }
+  footer ul img{
+    width: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:#ffffff ;
+  }
+
 @media(max-width: 992px) {
     .manu-items li {
         padding: 0px 15px;
@@ -488,7 +514,11 @@ button:hover {
         grid-template-columns:1fr;
         justify-items: center;
         gap: 30px 0px;
-        border: 2px solid;
         padding: 20px;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
     }
 }
