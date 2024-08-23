@@ -609,7 +609,7 @@ footer ul img {
 
     footer {
         grid-template-columns: 1fr;
-        justify-items: center;
+        /* justify-items: center; */
         text-align: center;
     }
 
