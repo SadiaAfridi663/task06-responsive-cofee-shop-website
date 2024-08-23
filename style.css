@@ -73,6 +73,7 @@ nav{
     display: flex;
     flex-direction: column;
     padding-left: 30px;
+    padding-left: 70px;
 }
 
 .text {
@@ -122,7 +123,7 @@ button:hover {
 
 .home-img {
     margin-top: -16%;
-    margin-left: -40px;
+    margin-left: -70px;
 
 }
 
@@ -136,15 +137,73 @@ button:hover {
     align-items: baseline;
 }
 
+#coffee-container h2{
+    text-align: center;
+    font-size: calc(1px + 2vw);
+}
+.coffee-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 40px;
+  }
+
+.coffee-cup{
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.265),rgba(0, 0, 0, 0.265)) , 
+  url(./assets/back4.jpg);
+  background-size: cover;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: all 0.4s ease ;
+}
+  
+.coffee-container .coffee-cup:hover {
+  transform: scale(1.1);
+}
+.coffee-cup{
+    position: relative;
+}
+
+.coffee-cup img{
+  width: 150px;
+  height: 130px;
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  border-radius: 50%;
+}
+.coffee-discription {
+    margin-top: 50%;
+}
+.coffee-discription h2{
+  margin: 5px 0px;
+}
+.coffee-discription p{
+  font-size: 13px;
+  margin: 2px 0px;
+}
+
 @media(max-width: 992px) {
     .manu-items li {
         padding: 0px 15px;
     }
 
+    
+
     .manu-btn {
         justify-content: flex-start;
 
 
+    }
+    .left-container{
+        padding-left: 40px;
+    }
+    button{
+        margin-left: 40px;
     }
 
     .right-container {
@@ -170,7 +229,12 @@ button:hover {
     #home{
         height: 400px;
     }
-
+    .left-container{
+        padding-left: 20px;
+    }
+    button{
+        margin-left: 10px;
+    }
     .right-container {
         justify-content: center;
         width: 100%;
@@ -206,6 +270,10 @@ button:hover {
     }
     .left-container{
         margin-top: -10%;
+    }
+    button{
+        margin-left: 20px;
+        padding: 6px 0px
     }
     .home-img img{
         width: 60%;
